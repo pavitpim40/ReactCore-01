@@ -143,9 +143,91 @@ const navItemElement_4 = createNavElement('contact');
 const lists = [navItemElement_1, navItemElement_2, navItemElement_3, navItemElement_4];
 
 const navListElement = React.createElement('ul', { className: 'nav_menu_list' }, ...lists);
+
+// TASK 8 : Header
+/*
+<header class="container header">
+    <!-- ==== NAVBAR ==== -->
+    <nav class="nav">
+        <Task5 />
+        <div class="nav_menu" id="nav_menu">
+			<Task7/>
+        </div>
+    </nav>
+</header>
+*/
+
+const navElement = React.createElement(
+    'nav',
+    { className: 'nav' },
+    logoElement,
+    React.createElement('div', { className: 'nav_menu', id: 'nav_menu' }, navListElement)
+);
+const headerElement = React.createElement('header', { className: 'container header' }, navElement);
+
+// Task 9 : Layout
+/*
+<section class="wrapper">
+    <div class="container">
+        <div class="grid-cols-2">
+            <!-- left -->
+            <div class="grid-item-1">
+                <!-- TASK-3 :HEADING -->
+                <!-- TASK-1 :INFO-->
+                <!-- TASK-2 :BTN -->
+            </div>
+
+            <!-- right -->
+            <div class="grid-item-2">
+                <!-- TASK4:Hero-Image -->
+            </div>
+        </div>
+    </div>
+</section>
+*/
+
+const left = React.createElement(
+    'div',
+    { className: 'grid-item-1' },
+    HeaderElement,
+    infoElement,
+    buttonGroupElement
+);
+
+const right = React.createElement('div', { className: 'grid-item-2' }, heroImageElement);
+const container = React.createElement('div', { className: 'grid-cols-2' }, left, right);
+const heroContainer = React.createElement('div', { className: 'container' }, container);
+const heroSectionElement = React.createElement('section', { className: 'wrapper' }, heroContainer);
+
+// TASK 10 : FullPage
+/*
+<>
+<Task8/>
+<Task9/>
+<>
+*/
+
+const app = React.createElement(React.Fragment, null, headerElement, heroSectionElement);
+
 // #2 ReactDOM : createRoot
 const domNode = document.getElementById('root');
 const root = ReactDOM.createRoot(domNode);
 
 // #3 ReactDOM : TakeOver for Render Task
-root.render(navListElement);
+root.render(app);
+
+{
+    /* <button type="submit">Button</button>
+
+const props  = {
+	type: "submit"
+} */
+}
+
+{
+    /* <MyCompoment title="pavit"/> */
+}
+
+// const props = {
+// 	title : "pavit"
+// }

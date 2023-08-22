@@ -38,6 +38,7 @@ function myLuckyNumber() {
 
 //  JSX : Html likes Syntax == ReactElement
 // { JS AREA }
+
 const styleObj = {
     color: 'blue',
     textAlign: 'center',

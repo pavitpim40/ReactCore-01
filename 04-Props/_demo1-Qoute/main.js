@@ -32,7 +32,7 @@ const quotes = [
         source: 'Desiderius Erasmus',
     },
 ];
-
+function App() {}
 // Render
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);

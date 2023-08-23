@@ -32,7 +32,35 @@ const quotes = [
         source: 'Desiderius Erasmus',
     },
 ];
-function App() {}
+
+function Card(props) {
+    console.log(props);
+    return (
+        <div className='card'>
+            <h4>Quote : {props.quote}</h4>
+            <p>Author : {props.author}</p>
+        </div>
+    );
+}
+
+const quoteObj = {
+    quote: 'The only sin is ignorance',
+    source: 'Christopher Marlowe',
+};
+function App() {
+    return (
+        <div className='container'>
+            <div className='card'>
+                <h4>Quote : {quoteObj.quote} </h4>
+                <p>Author : {quoteObj.source}</p>
+            </div>
+            <Card quote='The only sin is ignorance' author="'Christopher Marlowe'" />
+            <Card quote='คิดจะพัก คิดถึง Lab' author='Pavit P.' />
+            <Card quote='Hello World' author='Git' />
+            {/* const props = {quote:'The only sin is ignorance', author : 'Christopher Marlowe'} */}
+        </div>
+    );
+}
 // Render
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);

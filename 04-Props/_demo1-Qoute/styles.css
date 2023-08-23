@@ -24,7 +24,7 @@ body {
 }
 
 .card {
-    width: 1090px;
+    width: 490px;
     height: 254px;
     border-radius: 30px;
     background: #e0e0e0;
@@ -32,6 +32,10 @@ body {
     padding: 40px;
     font-size: 2rem;
     margin: 15px;
+}
+
+h4 {
+    margin-bottom: 20px;
 }
 p {
     font-family: 'San-serif';

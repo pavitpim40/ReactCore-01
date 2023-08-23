@@ -13,4 +13,10 @@ html {
 body {
     height: 100vh;
     font-family: 'urbanist', sans-serif;
+    color: #29005f;
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
 }

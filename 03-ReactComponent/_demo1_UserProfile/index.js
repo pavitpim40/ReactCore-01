@@ -79,6 +79,8 @@ function App() {
             <UserProfile />
             <UserProfile />
             <UserProfile />
+            <UserProfile />
+            <UserProfile />
         </div>
     );
 }
@@ -95,7 +97,25 @@ const root = ReactDOM.createRoot(domNode);
 // root.render(<UserProfile />);
 
 // root.render(App());
-root.render(<App />);
+
+const h = (
+    <div className='profile__card'>
+        <h1>FullName : John Doe</h1>
+        <h2>Age : 30</h2>
+    </div>
+);
+
+function H() {
+    return (
+        <div className='profile__card'>
+            <h1>FullName : John Doe</h1>
+            <h2>Age : 30</h2>
+        </div>
+    );
+}
+root.render(<H />);
+// root.render(H());
+// H() === <H/>
 
 /*
 <div id="root"> 

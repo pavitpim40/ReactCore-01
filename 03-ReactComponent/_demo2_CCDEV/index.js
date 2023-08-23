@@ -83,7 +83,7 @@ function Hero() {
 function App() {
     // return React.createElement('div', null, 'App!');
     return (
-        <div>
+        <div className='app'>
             <Header />
             <Hero />
         </div>
@@ -97,5 +97,12 @@ const domNode = document.getElementById('root');
 const root = ReactDOM.createRoot(domNode);
 
 // #3 ReactDOM : TakeOver for Render Task
+
+const myJSX = (
+    <div>
+        <h1>Hello</h1>
+        <h4>Age</h4>
+    </div>
+);
 
 root.render(<App />);

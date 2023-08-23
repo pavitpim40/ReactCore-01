@@ -1,5 +1,12 @@
 // #1 React : JSX
 
+const navItemComponent = (
+    <li className='nav_menu_item'>
+        <a href='#' className='nav_menu_link'>
+            contact
+        </a>
+    </li>
+);
 const headerComponent = (
     <header className='container header'>
         <nav className='nav'>

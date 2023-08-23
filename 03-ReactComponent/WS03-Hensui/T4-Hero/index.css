@@ -14,3 +14,14 @@ body {
     height: 100vh;
     font-family: 'urbanist', sans-serif;
 }
+
+.img__container {
+    background: red;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.img__container > img {
+    width: 100%;
+    display: block;
+}

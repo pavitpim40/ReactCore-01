@@ -9,7 +9,8 @@
 // #2B : JSX : Javascript Syntax Extension + Babel
 // ## Declarative : อยากได้อะไรให้บอก เดี๋ยวจัดการที่เหลือให้
 
-// const header = <h1>Hello</h1>; // ReactElement
+// const header = React.createElement("h1",null,"Hello")
+const header = <h1>Hello</h1>; // ReactElement
 
 const userAge = 42;
 const fullName = 'John Doe';

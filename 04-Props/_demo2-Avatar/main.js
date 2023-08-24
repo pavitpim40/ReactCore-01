@@ -8,6 +8,7 @@ const persons = [
 // Function Component
 // props =  { source : "img.png", alt:"Arya"}
 function Avatar(props) {
+    // props ={alt:"Arya", src:"image"}
     return (
         <div className='avatar' id='pic'>
             <img className='avatar__image' alt={props.alt} src={props.source} />
@@ -17,10 +18,8 @@ function Avatar(props) {
 // function AvatarGroup() {
 //     return (
 //         <div className='container'>
-//             <Avatar
-//                 source='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-//                 alt='Tony Stark'
-//             />
+//             <Avatar alt='Arya' src='image' />
+//             {/* const props ={alt:"Arya", src:"image"} */}
 //             <Avatar
 //                 source='https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
 //                 alt='Ned Stark'
@@ -103,6 +102,7 @@ const peopleLists = [
 function AvatarGroup() {
     return (
         <div className='container'>
+            {/* person = {id:number, name:string, age:number , src:string} */}
             {peopleLists.map((person) => (
                 <Avatar alt={person.name} source={person.src} />
             ))}

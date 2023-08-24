@@ -7,7 +7,7 @@ function Subject(props) {
     console.log(props); // props = {name : "React", lv:5}
     return (
         <h1>
-            Hello {props.name} <span>LV : {props.lv}</span>
+            Hello {props.name} || LV : {props.lv}
         </h1>
     );
 }

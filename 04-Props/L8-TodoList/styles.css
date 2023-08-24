@@ -35,3 +35,27 @@ h1 {
 .text-blue {
     color: blue;
 }
+
+.todo__item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.todo__item > span {
+    font-size: 26px;
+}
+
+.todo__item > button {
+    padding: 5px;
+}
+
+.todo__add {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo__add > input,
+.todo__add > button {
+    padding: 10px;
+}

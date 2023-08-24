@@ -26,6 +26,7 @@ h1 {
     align-items: center;
     background-color: wheat;
     height: 100vh;
+    gap: 20px;
 }
 
 .text-red {
@@ -34,4 +35,22 @@ h1 {
 
 .text-blue {
     color: blue;
+}
+
+.card {
+    border: 1px solid black;
+    width: 90%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__footer > p {
+    font-size: 24px;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
 }
